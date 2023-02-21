@@ -27,4 +27,14 @@ html {
 
 body {
   box-sizing: border-box;
+  font-size: $default-font-size;
+}
+
+a {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
 }
