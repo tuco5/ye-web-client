@@ -1,0 +1,18 @@
+@import '/src/sass/variables';
+
+.text {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+
+  .logo:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.plus {
+  color: $green-500;
+  font-size: 1.4rem;
+}
