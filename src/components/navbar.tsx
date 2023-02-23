@@ -20,11 +20,11 @@ export default function Navbar() {
         </Link>
 
         <div className={styles.menu}>
-          <Link href="/about-us" className={`${styles.link} ${pathname === '/about-us' && styles.active}`}>
-            ¿Quienes somos?
-          </Link>
           <Link href="/activities" className={`${styles.link} ${pathname === '/activities' && styles.active}`}>
             Actividades
+          </Link>
+          <Link href="/about-us" className={`${styles.link} ${pathname === '/about-us' && styles.active}`}>
+            Cultura
           </Link>
           <Link href="/testimonies" className={`${styles.link} ${pathname === '/testimonies' && styles.active}`}>
             Testimonios
