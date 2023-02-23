@@ -1,9 +1,98 @@
+@import '../sass/variables';
+
 .main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+
   min-height: 100vh;
-  background-image: url();
+}
+
+.hero__img {
+  position: relative;
+  z-index: -1;
+  width: 70vw;
+  height: 100vh;
+  transition: all 0.2s ease;
+
+  background-image: linear-gradient(to right bottom, rgba(4, 255, 104, 0.6), rgba(5, 126, 247, 0.6)), url('/chalk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  // background-attachment: fixed;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  }
+}
+
+.hero__banner {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-bottom: 24rem;
+}
+
+.title {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.span {
+  color: $green-500;
+  font-weight: 400;
+}
+
+.hero__cta {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.btn__main {
+  color: $green-600;
+  padding: 1rem 3rem;
+  background-color: white;
+  border: 3px solid $green-600;
+  border-radius: 4rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    color: white;
+    background-color: $green-600;
+    transform: translateY(-4px);
+    box-shadow: 2px 5px 10px #888888;
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 1px 3px 5px #888888;
+  }
+}
+
+.section__about {
+  height: 50vh;
+  background-color: $cold-gray-400;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 300;
+  color: white;
 }
