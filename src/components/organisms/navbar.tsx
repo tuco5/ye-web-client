@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Logo from '../atoms/logo';
+import { Logo } from '../atoms';
 import styles from './navbar.module.scss';
 
 export function Navbar() {

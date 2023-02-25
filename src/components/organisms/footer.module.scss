@@ -1,60 +1,50 @@
 @import '/src/sass/variables';
 
-.footer {
+.container {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 3rem;
-  height: 35vh;
+  height: 45vh;
   background-color: $cold-gray-800;
+}
+.logo {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
 
-  &__logo {
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-  }
+.social {
+  margin-left: 1rem;
+  width: 100%;
+  max-width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
 
-  &__social {
-    width: 100%;
-    max-width: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
-  }
+.menu {
+  padding: 1rem 2rem;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  &__menu {
-    padding: 1rem 2rem;
-    width: 80%;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+.link {
+  color: $cold-gray-400;
+  transition: all 0.2s;
 
-  &__link {
-    color: $cold-gray-400;
-    transition: all 0.2s;
-
-    &:hover {
-      color: white;
-    }
-  }
-
-  &__copyright {
-    color: $cold-gray-400;
-    margin-top: 1rem;
+  &:hover {
+    color: white;
   }
 }
 
-.icon {
-  filter: invert(100%);
-  transition: all 0.2s;
-  background-image: linear-gradient(to right, orangered, blue);
-  // -webkit-background-clip: text;
-  &__fb {
-  }
-  &__instagram:hover {
-  }
+.copyright {
+  font-size: 1rem;
+  color: $cold-gray-300;
+  margin-top: 1rem;
 }

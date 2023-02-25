@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import styles from './logo.module.scss';
 
-export default function Logo({ className }: { className?: string }) {
+export function Logo({ className }: { className?: string }) {
   // TODO: make logo on hover to shrink and text grow
   return (
     <div className={className}>
