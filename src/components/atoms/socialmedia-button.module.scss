@@ -3,8 +3,8 @@
 .container {
   color: $cold-gray-500;
   display: flex;
-  width: 5rem;
-  height: 5rem;
+  width: 3.8rem;
+  height: 3.8rem;
   justify-content: center;
   align-items: center;
   background: $cold-gray-700;
@@ -25,15 +25,14 @@
   }
 }
 .icon {
-  padding: 0.8rem;
   height: 100%;
   width: 100%;
 }
 
 .facebook {
-  padding-right: 2px;
+  padding: 8px 2px 0;
 }
 
 .instagram {
-  padding-left: 2px;
+  padding: 1px 3px 0 5px;
 }
