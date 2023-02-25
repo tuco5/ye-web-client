@@ -1,8 +1,6 @@
-import '../sass/globals.scss';
 import { Inter } from '@next/font/google';
-
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import { Navbar, Footer } from '../components/organisms';
+import '../sass/global.scss';
 
 const inter = Inter({
   subsets: ['latin'],

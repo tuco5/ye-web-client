@@ -1,4 +1,4 @@
-@import '../sass/variables';
+@import '/src/sass/variables';
 
 .navbar {
   padding: 0 3rem;
@@ -37,9 +37,11 @@
   transition: all 0.2s ease-in;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   height: 100%;
   padding: 0 1rem;
+  flex: 1 1 auto;
 
   &:after {
     content: '';

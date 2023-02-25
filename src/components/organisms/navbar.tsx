@@ -1,14 +1,10 @@
 'use client';
-
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
-import Logo from './logo';
-
+import Logo from '../atoms/logo';
 import styles from './navbar.module.scss';
 
-export default function Navbar() {
+export function Navbar() {
   const pathname = usePathname();
 
   return (
