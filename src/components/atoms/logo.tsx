@@ -8,7 +8,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <div className={className}>
       <Link href="/" className={styles.logo}>
-        <Image src="/logo-min.png" width={120} height={60} alt="logo" />
+        <Image className={styles.image} src="/logo-min.png" width={100} height={50} alt="logo" />
         <p className={styles.text}>
           Yoga <span className={styles.plus}>+</span> Escalada
         </p>

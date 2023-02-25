@@ -1,15 +1,32 @@
 @import '/src/sass/variables';
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    & .image {
+      transform: scale(0.96);
+    }
+
+    & .text {
+      transform: scale(1.06);
+    }
+  }
+}
+
+.image {
+  transition: all 0.2s ease-out;
+}
+
 .text {
+  margin-left: 1.2rem;
   width: 100%;
   text-align: center;
   letter-spacing: 2px;
-  font-size: 1.2rem;
-  transition: all 0.2s;
-
-  .logo:hover & {
-    transform: scale(1.1);
-  }
+  font-size: 1rem;
+  transition: all 0.2s ease-out;
 }
 
 .plus {
