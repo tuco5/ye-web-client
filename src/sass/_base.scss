@@ -28,3 +28,8 @@ html {
 body {
   box-sizing: border-box;
 }
+
+::selection {
+  color: $blue-500;
+  background-color: $green-300;
+}

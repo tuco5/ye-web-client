@@ -16,10 +16,10 @@
   height: 100vh;
   transition: all 0.2s ease;
 
-  background-image: linear-gradient(to right bottom, rgba(4, 255, 104, 0.6), rgba(5, 126, 247, 0.6)), url('/chalk.jpg');
+  background-image: linear-gradient(to right bottom, rgba(4, 255, 104, 0.6), rgba(5, 126, 247, 0.6)), url('/images/chalk.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   // background-attachment: fixed;
 
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -36,21 +36,17 @@
   margin-bottom: 24rem;
 }
 
-.title {
+.maintitle {
   font-size: 5rem;
   letter-spacing: 4px;
   font-weight: 300;
+  padding: 4rem;
 }
 
 .subtitle {
   font-size: 5rem;
   letter-spacing: 1px;
   font-weight: 300;
-}
-
-.span {
-  color: $green-500;
-  font-weight: 400;
 }
 
 .hero__cta {
@@ -115,4 +111,27 @@
   text-align: center;
   font-weight: 300;
   color: white;
+}
+
+.section__features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.features__banner {
+  font-size: 2rem;
+  max-width: 900px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features__container {
+  margin-top: 3rem;
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-around;
+  align-items: stretch;
 }
