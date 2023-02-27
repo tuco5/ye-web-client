@@ -30,11 +30,11 @@ export default function Home() {
       </section>
 
       <section className={styles.section__features}>
-        <h3 className="title my-5">Un original de bienestar integral</h3>
+        <h3 className="title my-5">Un concepto de bienestar integral</h3>
         <div className={styles.features__banner}>
           <p className="text p-1 mb-2">
-            Un concepto original de bienestar integral, a partir de una superación personal de cuerpo y mente, gracias al conjunto de los beneficios de escalar <span className="green__600">+</span>{' '}
-            Yoga. Ambiente familiar y conexión con la naturaleza. Vida al aire libre.
+            A partir de una superación personal de cuerpo y mente, gracias al conjunto de los beneficios de escalar <span className="green__600">+</span> Yoga. Ambiente familiar y conexión con la
+            naturaleza. Vida al aire libre.
           </p>
         </div>
 
