@@ -13,8 +13,8 @@ export function Navbar() {
         <Logo />
 
         <div className={styles.menu}>
-          <Link href="/activities" className={`${styles.link} ${pathname === '/activities' && styles.active}`}>
-            Actividades
+          <Link href="/timetable" className={`${styles.link} ${pathname === '/timetable' && styles.active}`}>
+            Horarios
           </Link>
           <Link href="/about-us" className={`${styles.link} ${pathname === '/about-us' && styles.active}`}>
             Cultura
