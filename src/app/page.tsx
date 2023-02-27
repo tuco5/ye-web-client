@@ -53,6 +53,10 @@ export default function Home() {
           </FeatureBox>
         </div>
       </section>
+
+      <section className={styles.section__shift}></section>
+      <section className={styles.section__testimonies}></section>
+      <section className={styles.section__location}></section>
     </>
   );
 }

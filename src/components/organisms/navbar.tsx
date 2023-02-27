@@ -19,8 +19,8 @@ export function Navbar() {
           <Link href="/about-us" className={`${styles.link} ${pathname === '/about-us' && styles.active}`}>
             Cultura
           </Link>
-          <Link href="/testimonies" className={`${styles.link} ${pathname === '/testimonies' && styles.active}`}>
-            Testimonios
+          <Link href="/contact-us" className={`${styles.link} ${pathname === '/contact-us' && styles.active}`}>
+            Contactanos
           </Link>
         </div>
       </div>
