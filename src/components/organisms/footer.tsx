@@ -19,9 +19,6 @@ export function Footer() {
         <Link className={styles.link} href="#">
           Politicas de privacidad
         </Link>
-        <Link className={styles.link} href="#">
-          Bolsa de trabajo
-        </Link>
       </div>
 
       <p className={styles.copyright}>© Copy Right 2023</p>
