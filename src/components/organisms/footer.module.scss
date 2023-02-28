@@ -6,10 +6,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 3rem;
+  padding: 3.5rem;
   height: 45vh;
   background-color: $cold-gray-800;
 }
+
+.banner {
+  color: white;
+  letter-spacing: 4px;
+  padding: 1rem;
+}
+
 .logo {
   margin-left: 2rem;
   margin-bottom: 2rem;
@@ -19,7 +26,7 @@
   margin-left: 2rem;
   margin-bottom: 4rem;
   width: 100%;
-  max-width: 100px;
+  max-width: 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
