@@ -45,4 +45,13 @@
 }
 
 .text {
+  padding: 0 0.5rem;
+  color: $cold-gray-600;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: $green-600;
+    border-color: $green-600;
+  }
 }

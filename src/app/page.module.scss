@@ -123,7 +123,7 @@
 
     &__2 {
       font-size: 2rem;
-      color: $green-600;
+      color: $cold-gray-600;
     }
 
     &__3 {
@@ -133,10 +133,11 @@
   }
 
   &__menu {
-    padding: 1rem;
-    width: 70%;
+    padding: 2rem;
+    width: 100%;
+    max-width: 40rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 2.2rem;
   }
 

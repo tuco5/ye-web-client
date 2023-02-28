@@ -16,7 +16,7 @@ a {
   letter-spacing: 0.2rem;
   text-align: center;
 
-  background-image: linear-gradient(to right, $blue-600, $green-500);
+  background-image: $rainbow-blue-gradient;
   background-clip: text;
   -webkit-background-clip: text;
 

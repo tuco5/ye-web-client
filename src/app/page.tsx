@@ -71,24 +71,14 @@ export default function Home() {
               <p className={styles.shift__text__1}>Domingos</p>
               <p className={styles.shift__text__3}>Cerrado</p>
             </div>
-            <div className={styles.shift__text__group}>
-              <p className={styles.shift__text__1}>Costo Inscripción</p>
-              <p className={styles.shift__text__2}>$250.00</p>
-            </div>
-            <div className={styles.shift__text__group}>
-              <p className={styles.shift__text__1}>Mas Informes</p>
+            <div className={`${styles.shift__text__group} mt-3`}>
+              <p className={styles.shift__text__1}>Costos</p>
               <ul className={styles.shift__menu}>
-                <Button href="/informes#climbing" variant="text" type="link">
-                  Escalada
+                <Button href="/info#climbing" variant="text" type="link">
+                  Escalada &rarr;
                 </Button>
-                <Button href="/informes#yoga" variant="text" type="link">
-                  Yoga
-                </Button>
-                <Button href="/informes#member" variant="text" type="link">
-                  Membresía
-                </Button>
-                <Button href="/informes#ye-family" variant="text" type="link">
-                  Ye family
+                <Button href="/info#yoga" variant="text" type="link">
+                  Yoga &rarr;
                 </Button>
               </ul>
             </div>
