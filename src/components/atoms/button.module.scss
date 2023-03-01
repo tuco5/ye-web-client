@@ -46,12 +46,13 @@
 
 .text {
   padding: 0 0.5rem;
-  color: $cold-gray-600;
+  color: $green-600;
   transition: all 0.2s;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid;
 
   &:hover {
-    color: $green-600;
+    background-color: $green-600;
     border-color: $green-600;
+    color: white;
   }
 }

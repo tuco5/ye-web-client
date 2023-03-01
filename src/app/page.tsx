@@ -1,9 +1,12 @@
-import Link from 'next/link';
 import styles from './page.module.scss';
-import { FeatureBox, BackgroundVideo } from '@/components/molecules';
+import { Carousel } from '@/components/organisms';
+import { FeatureBox, ReviewCard } from '@/components/molecules';
 import { Button } from '@/components/atoms';
+import profilePic1 from '../../public/images/user-1.jpg';
+import profilePic2 from '../../public/images/user-2.jpg';
+import profilePic3 from '../../public/images/user-3.jpg';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <main className={styles.main}>
@@ -34,8 +37,7 @@ export default function Home() {
         <h3 className="title mt-6 mb-2">Un concepto de bienestar integral</h3>
         <div className={styles.features__banner}>
           <p className="text p-1 mb-2">
-            A partir de una superación personal de cuerpo y mente, gracias al conjunto de los beneficios de escalar <span className="green__600">+</span> Yoga. Ambiente familiar y conexión con la
-            naturaleza. Vida al aire libre.
+            A partir de una superación personal de cuerpo y mente, gracias al conjunto de los beneficios de escalar <span className="green__600">+</span> Yoga.
           </p>
         </div>
 
@@ -90,15 +92,40 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.banner__2}>
+        <p className="pb-4">
+          Ambiente familiar y conexión con la naturaleza<span className="green__500">.</span>
+        </p>
+      </section>
+
       <section className={styles.testimonies}>
-        <div className={styles.testimonies__video}>
-          <BackgroundVideo mp4="https://www.facebook.com/FacebookDevelopers/videos/10152454700553553/" />
-        </div>
-        <h3 className="title my-5">Historias</h3>
+        <h3 className="title my-8">Historias</h3>
+
+        <Carousel dots={true} speed={3000} arrows={false} className={styles.testimonies__carousel}>
+          <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
+            <p>Gran ambiente y pura diversión!!</p>
+          </ReviewCard>
+          <ReviewCard name="Gil Gofer" photo={profilePic2} href="https://www.facebook.com/gil.gofer/posts/10157797204899596">
+            <p>excellent outdoor climbing gym! top level boulders and lead routes! awesome staff! Yeahhhhh!!!</p>
+          </ReviewCard>
+          <ReviewCard name="Barbie Dayz" photo={profilePic3} href="https://www.facebook.com/waaa12345/posts/10160755383350543">
+            <p>Excelentes maestros de yoga. Muy buenas instalaciones para escalar.</p>
+          </ReviewCard>
+        </Carousel>
       </section>
 
       <section className={styles.location}>
-        <h3 className="title my-5">Ubicación</h3>
+        <div className={styles.location__map}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.889853241277!2d-103.43646799999999!3d20.633346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ad01239c5de1%3A0x4dbf784f6c56f4b5!2sYE%20Escalada%20%2B%20Yoga%20Center!5e0!3m2!1ses-419!2smx!4v1677639047209!5m2!1ses-419!2smx"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </>
   );

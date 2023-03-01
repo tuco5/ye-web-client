@@ -28,3 +28,15 @@ a {
   color: $cold-gray-700;
   font-weight: 400;
 }
+
+.coming_soon {
+  font-size: 4rem;
+  color: white;
+  letter-spacing: 1.5rem;
+  text-transform: lowercase;
+
+  &__icon {
+    margin-top: 4rem;
+    color: white;
+  }
+}

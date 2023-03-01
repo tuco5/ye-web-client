@@ -1,6 +1,6 @@
 import styles from './page.module.scss';
 import ClockIcon from '../../../public/icons/clock.svg';
-export default function InfoPage() {
+export default function ResourcesPage() {
   return (
     <section className={styles.section}>
       <h2 className="coming_soon">

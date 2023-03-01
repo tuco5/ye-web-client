@@ -56,7 +56,8 @@
   margin-top: 6rem;
 }
 
-.banner {
+.banner,
+.banner__2 {
   height: 50vh;
   background-color: $cold-gray-400;
 
@@ -67,6 +68,15 @@
   text-align: center;
   font-weight: 300;
   color: white;
+}
+
+.banner__2 {
+  height: 60vh;
+  margin-top: -4%;
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 92%);
+  }
 }
 
 .features {
@@ -178,10 +188,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
+  margin-top: -5%;
 
-  &__video {
-    width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(120, 2, 6, 0.5), rgba(6, 17, 97, 0.7)), url('/images/ye-nature-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 92%);
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
+  }
+
+  &__carousel {
+    width: 90%;
   }
 }
 
@@ -189,5 +211,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
+  margin-top: -2%;
+
+  &__map {
+    width: 100%;
+    height: 100%;
+  }
 }
