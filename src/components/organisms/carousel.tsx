@@ -6,8 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 // docs https://react-slick.neostack.com/docs/api
 
 interface CarouselProps {
-  dots: boolean;
-  speed: number;
+  dots?: boolean;
+  speed?: number;
   children: React.ReactNode;
   autoplay?: boolean;
   slidesToScroll?: number;
@@ -17,22 +17,28 @@ interface CarouselProps {
   infinite?: boolean;
   arrows?: boolean;
   adaptiveHeight?: boolean;
+  lazyLoad?: 'ondemand' | 'progressive';
 }
 
-export function Carousel({ children, slidesToShow, autoplay, infinite, ...settings }: CarouselProps) {
+export function Carousel({ children, ...settings }: CarouselProps) {
   const { width } = useWindowSize();
 
   if (width < 900) {
-    slidesToShow = 1;
-    autoplay = true;
-    infinite = true;
+    settings = {
+      ...settings,
+      slidesToShow: 1,
+      autoplay: true,
+      infinite: true,
+      dots: true,
+      speed: 3000,
+      lazyLoad: 'progressive',
+    };
   } else {
-    slidesToShow = slidesToShow || 3;
+    settings = {
+      ...settings,
+      slidesToShow: settings.slidesToShow || 3,
+    };
   }
 
-  return (
-    <Slider {...settings} slidesToShow={slidesToShow}>
-      {children}
-    </Slider>
-  );
+  return <Slider {...settings}>{children}</Slider>;
 }

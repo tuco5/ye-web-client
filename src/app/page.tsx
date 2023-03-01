@@ -101,7 +101,7 @@ export default function HomePage() {
       <section className={styles.testimonies}>
         <h3 className="title my-8">Historias</h3>
 
-        <Carousel dots={true} speed={3000} arrows={false} className={styles.testimonies__carousel}>
+        <Carousel arrows={false} className={styles.testimonies__carousel}>
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
             <p>Gran ambiente y pura diversión!!</p>
           </ReviewCard>
