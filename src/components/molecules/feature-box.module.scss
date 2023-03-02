@@ -1,5 +1,7 @@
 @import '/src/sass/variables';
 
+@import '/src/sass/mixins';
+
 .container {
   display: flex;
   flex-direction: column;
@@ -16,6 +18,10 @@
 
   &:hover {
     transform: translateY(-1rem);
+  }
+
+  @include respond(tab-port) {
+    max-width: 24rem;
   }
 }
 

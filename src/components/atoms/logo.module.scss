@@ -1,6 +1,7 @@
 @import '/src/sass/variables';
+@import '/src/sass/mixins';
 
-.logo {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +17,19 @@
   }
 }
 
+.logo {
+  position: relative;
+  display: block;
+
+  width: 100px;
+  height: 50px;
+
+  @include respond(phone) {
+    width: 70px;
+    height: 35px;
+  }
+}
+
 .image {
   transition: all 0.2s ease-out;
 }
@@ -25,7 +39,14 @@
   text-align: center;
   letter-spacing: 2px;
   font-size: 1rem;
+  font-weight: 300;
   transition: all 0.2s ease-out;
+  white-space: nowrap;
+
+  @include respond(phone) {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
 }
 
 .plus {

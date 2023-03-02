@@ -28,9 +28,9 @@ export default function HomePage() {
       </main>
 
       <section className={styles.banner}>
-        <h1 className={styles.maintitle}>
+        <p className="pb-4">
           El rocódromo más original en la zona de Zapopan Jalisco<span className="green__500">.</span>
-        </h1>
+        </p>
       </section>
 
       <section className={styles.features}>
@@ -60,7 +60,7 @@ export default function HomePage() {
       <section className={styles.shift}>
         <div className={styles.shift__container}>
           <div className={styles.shift__content}>
-            <h3 className="title mt-5 mb-2">Inscripción y horario</h3>
+            <h3 className="title mt-5 mb-2">horarios</h3>
             <div className={styles.shift__text__group}>
               <p className={styles.shift__text__1}>Lunes a Viernes</p>
               <p className={styles.shift__text__2}>10:00am - 10:30pm</p>
