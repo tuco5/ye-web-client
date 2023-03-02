@@ -16,14 +16,14 @@ export default function HomePage() {
         <div className={styles.hero__img}>&nbsp;</div>
 
         <div className={styles.hero__banner}>
-          <h2 className={styles.subtitle}>
+          <h2 className={`${styles.subtitle} ${styles.subtitle__animate__1}`}>
             Less Talk<span className="green__500">.</span>
           </h2>
-          <h2 className={styles.subtitle}>
+          <h2 className={`${styles.subtitle} ${styles.subtitle__animate__2}`}>
             More Chalk<span className="green__500">.</span>
           </h2>
           <div className={styles.hero__cta}>
-            <Button href="/informes" type="link" variant="main">
+            <Button href="/informes" type="link" variant="main" className={styles.hero__cta__animation}>
               Informes
             </Button>
           </div>

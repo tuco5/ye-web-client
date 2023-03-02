@@ -6,19 +6,21 @@ interface ButtonProps {
   variant: 'main' | 'text';
   type?: 'button' | 'link';
   href?: string;
+  className?: string;
 }
 
-export function Button({ children, href = '#', variant, type = 'button' }: ButtonProps) {
+export function Button({ children, href = '#', variant, type = 'button', className }: ButtonProps) {
+  className = `${className} ${styles[variant]}`;
   if (type === 'link') {
     return (
-      <Link href={href} className={styles[variant]}>
+      <Link href={href} className={className}>
         {children}
       </Link>
     );
   }
 
   return (
-    <button type="button" className={styles[variant]}>
+    <button type="button" className={className}>
       {children}
     </button>
   );
