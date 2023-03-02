@@ -1,3 +1,4 @@
+import { WhatsappButton } from '@/components/atoms/whatsapp-button';
 import { Inter } from '@next/font/google';
 import { Navbar, Footer } from '../components/organisms';
 import '../sass/global.scss';
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Navbar />
         {children}
+        <WhatsappButton phone="3221571832" initMsg="Hola!" />
         <Footer />
       </body>
     </html>
