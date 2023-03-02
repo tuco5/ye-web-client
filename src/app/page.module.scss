@@ -143,7 +143,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #fafafa;
-  height: 95vh;
+  height: 90vh;
   @include respond(tab-port) {
     background-color: transparent;
   }
@@ -265,7 +265,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   margin-top: -4.5rem;
 
   background-image: linear-gradient(to right bottom, rgba(120, 2, 6, 0.5), rgba(6, 17, 97, 0.7)), url('/images/ye-nature-2.jpg');
@@ -279,21 +279,27 @@
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
   }
 
+  @include respond(tab-land) {
+    height: 80vh;
+  }
+
   &__carousel {
     width: 90%;
 
-    @include respond(phone) {
-      max-width: 40rem;
+    @include respond(tab-land) {
+      max-width: 45rem;
     }
   }
 }
 
 .location {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 80vh;
-  margin-top: -4rem;
+  margin-top: -3.5rem;
+  z-index: 1;
 
   &__map {
     width: 100%;
