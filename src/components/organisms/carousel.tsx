@@ -27,16 +27,14 @@ export function Carousel({ children, ...settings }: CarouselProps) {
     settings = {
       ...settings,
       slidesToShow: 1,
-      autoplay: true,
-      infinite: true,
       dots: true,
-      speed: 3000,
+      speed: 500,
       lazyLoad: 'progressive',
     };
   } else {
     settings = {
       ...settings,
-      slidesToShow: settings.slidesToShow || 3,
+      slidesToShow: 3,
     };
   }
 

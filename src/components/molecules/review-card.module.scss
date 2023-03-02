@@ -49,9 +49,14 @@
   margin-bottom: 2rem;
 }
 .name {
+  position: relative;
   color: black;
   font-weight: 800;
   letter-spacing: 2px;
   width: 100%;
+  max-width: 220px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

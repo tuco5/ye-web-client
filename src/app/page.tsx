@@ -2,9 +2,12 @@ import styles from './page.module.scss';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
 import { Button } from '@/components/atoms';
-import profilePic1 from '../../public/images/user-1.jpg';
-import profilePic2 from '../../public/images/user-2.jpg';
-import profilePic3 from '../../public/images/user-3.jpg';
+import profilePic1 from '../../public/images/user-1-min.jpg';
+import profilePic2 from '../../public/images/user-2-min.jpg';
+import profilePic3 from '../../public/images/user-3-min.jpg';
+import profilePic4 from '../../public/images/user-4-min.jpg';
+import profilePic5 from '../../public/images/user-5-min.jpg';
+import profilePic6 from '../../public/images/user-6-min.jpg';
 
 export default function HomePage() {
   return (
@@ -29,7 +32,7 @@ export default function HomePage() {
 
       <section className={styles.banner}>
         <p className="pb-4">
-          El rocódromo más original en la zona de Zapopan Jalisco<span className="green__500">.</span>
+          El poderosísimo rocódromo más original en Guadalajara Jalisco<span className="green__500">.</span>
         </p>
       </section>
 
@@ -94,14 +97,14 @@ export default function HomePage() {
 
       <section className={styles.banner__2}>
         <p className="pb-4">
-          Ambiente familiar y conexión con la naturaleza<span className="green__500">.</span>
+          Ambiente familiar, conexión con la naturaleza, vida al aire libre<span className="green__500">.</span>
         </p>
       </section>
 
       <section className={styles.testimonies}>
         <h3 className="title my-8">Historias</h3>
 
-        <Carousel arrows={false} className={styles.testimonies__carousel}>
+        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite>
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
             <p>Gran ambiente y pura diversión!!</p>
           </ReviewCard>
@@ -110,6 +113,15 @@ export default function HomePage() {
           </ReviewCard>
           <ReviewCard name="Barbie Dayz" photo={profilePic3} href="https://www.facebook.com/waaa12345/posts/10160755383350543">
             <p>Excelentes maestros de yoga. Muy buenas instalaciones para escalar.</p>
+          </ReviewCard>
+          <ReviewCard name="Nicole Basich" photo={profilePic4} href="https://www.facebook.com/nicole.basich/posts/10213912231294534">
+            <p>el mejor muro de escalada en gdl</p>
+          </ReviewCard>
+          <ReviewCard name="Mauricio Villavicencio" photo={profilePic5} href="https://www.facebook.com/mauricio.villavicencio.12/posts/1586729591431646">
+            <p>Las instalaciones y el ambiente por no dejar de decir del personal, todo excelso</p>
+          </ReviewCard>
+          <ReviewCard name="Ruth B Garcia Hdz" photo={profilePic6} href="https://www.facebook.com/ruth.b.hdz.3/posts/10158581476097506">
+            <p>No puedo encontrar otro lugar mejor para relajarme más que este.</p>
           </ReviewCard>
         </Carousel>
       </section>
