@@ -7,13 +7,14 @@ interface ButtonProps {
   type?: 'button' | 'link';
   href?: string;
   className?: string;
+  scroll?: boolean;
 }
 
-export function Button({ children, href = '#', variant, type = 'button', className }: ButtonProps) {
+export function Button({ children, href = '#', variant, type = 'button', className, scroll }: ButtonProps) {
   className = `${className} ${styles[variant]}`;
   if (type === 'link') {
     return (
-      <Link href={href} className={className}>
+      <Link href={href} className={className} scroll={scroll}>
         {children}
       </Link>
     );

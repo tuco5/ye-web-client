@@ -23,7 +23,7 @@ export default function HomePage() {
             More Chalk<span className="green__500">.</span>
           </h2>
           <div className={styles.hero__cta}>
-            <Button href="/informes" type="link" variant="main" className={styles.hero__cta__animation}>
+            <Button href="/prices" type="link" variant="main" className={styles.hero__cta__animation}>
               Informes
             </Button>
           </div>
@@ -32,7 +32,7 @@ export default function HomePage() {
 
       <section className={styles.banner}>
         <p className="pb-4">
-          El poderosísimo rocódromo más original en Guadalajara Jalisco<span className="green__500">.</span>
+          El rocódromo más original en Guadalajara Jalisco<span className="green__500">.</span>
         </p>
       </section>
 
@@ -86,7 +86,7 @@ export default function HomePage() {
                 <Button href="/prices#climbing" variant="text" type="link">
                   Escalada &rarr;
                 </Button>
-                <Button href="/prices#yoga" variant="text" type="link">
+                <Button href="/prices#yoga" variant="text" type="link" scroll={false}>
                   Yoga &rarr;
                 </Button>
               </ul>
