@@ -1,4 +1,4 @@
-import { WhatsappButton } from '@/components/atoms/whatsapp-button';
+import { WhatsappButton } from '@/components/atoms';
 import { Inter } from '@next/font/google';
 import { Navbar, Footer } from '../components/organisms';
 import '../sass/global.scss';
