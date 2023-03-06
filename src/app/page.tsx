@@ -86,7 +86,7 @@ export default function HomePage() {
                 <Button href="/prices#climbing" variant="text" type="link">
                   Escalada &rarr;
                 </Button>
-                <Button href="/prices#yoga" variant="text" type="link">
+                <Button href="/prices#yoga" variant="text" type="link" scroll={false}>
                   Yoga &rarr;
                 </Button>
               </ul>
