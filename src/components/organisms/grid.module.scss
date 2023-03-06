@@ -1,0 +1,36 @@
+@import '/src/sass/variables';
+
+.grid {
+  width: 85%;
+  margin: 0 auto;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: [first] 75% [scond]auto;
+  grid-template-rows: repeat(8, 6rem [col-start]);
+}
+
+.item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__description {
+    color: $cold-gray-600;
+    font-weight: 600;
+  }
+
+  &__price {
+    text-align: center;
+    color: $green-600;
+    font-weight: 600;
+  }
+
+  &__caveat {
+    color: $cold-gray-400;
+    font-size: 1.2rem;
+  }
+}

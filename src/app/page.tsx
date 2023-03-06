@@ -1,7 +1,7 @@
 import styles from './page.module.scss';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
-import { Button } from '@/components/atoms';
+import { Button, Title } from '@/components/atoms';
 import profilePic1 from '../../public/images/user-1-min.jpg';
 import profilePic2 from '../../public/images/user-2-min.jpg';
 import profilePic3 from '../../public/images/user-3-min.jpg';
@@ -37,7 +37,9 @@ export default function HomePage() {
       </section>
 
       <section className={styles.features}>
-        <h3 className="title mt-6 mb-2">Un concepto de bienestar integral</h3>
+        <Title className="mt-6 mb-2" variant="rainbow-blue">
+          Un concepto de bienestar integral
+        </Title>
         <div className={styles.features__banner}>
           <p className="text p-1 mb-2">
             A partir de una superación personal de cuerpo y mente, gracias al conjunto de los beneficios de escalar <span className="green__600">+</span> Yoga.
@@ -60,10 +62,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.shift}>
+      <section id="shift" className={styles.shift}>
         <div className={styles.shift__container}>
           <div className={styles.shift__content}>
-            <h3 className="title mt-5 mb-2">horarios</h3>
+            <Title className="mt-5 mb-2" variant="rainbow-blue">
+              horarios
+            </Title>
             <div className={styles.shift__text__group}>
               <p className={styles.shift__text__1}>Lunes a Viernes</p>
               <p className={styles.shift__text__2}>10:00am - 10:30pm</p>
@@ -102,7 +106,9 @@ export default function HomePage() {
       </section>
 
       <section className={styles.testimonies}>
-        <h3 className="title my-8">Historias</h3>
+        <Title className="my-8" variant="rainbow-blue">
+          Historias
+        </Title>
 
         <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite>
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
