@@ -83,10 +83,10 @@ export default function HomePage() {
             <div className={`${styles.shift__text__group} mt-3`}>
               <p className={styles.shift__text__1}>Costos</p>
               <ul className={styles.shift__menu}>
-                <Button href="/prices/#climbing" variant="text" type="link">
+                <Button href="/prices#climbing" variant="text" type="link">
                   Escalada &rarr;
                 </Button>
-                <Button href="/prices/#yoga" variant="text" type="link" scroll={false}>
+                <Button href="/prices#yoga" variant="text" type="link">
                   Yoga &rarr;
                 </Button>
               </ul>

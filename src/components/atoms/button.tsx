@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import styles from './button.module.scss';
 
 interface ButtonProps {
@@ -7,16 +6,15 @@ interface ButtonProps {
   type?: 'button' | 'link';
   href?: string;
   className?: string;
-  scroll?: boolean;
 }
 
-export function Button({ children, href = '#', variant, type = 'button', className, scroll }: ButtonProps) {
+export function Button({ children, href = '#', variant, type = 'button', className }: ButtonProps) {
   className = `${className} ${styles[variant]}`;
   if (type === 'link') {
     return (
-      <Link href={href} className={className} scroll={scroll}>
+      <a href={href} className={className}>
         {children}
-      </Link>
+      </a>
     );
   }
 
