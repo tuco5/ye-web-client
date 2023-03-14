@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
-import { Button, Title } from '@/components/atoms';
+import { Button, Title, Gradient } from '@/components/atoms';
 import profilePic1 from '../../public/images/user-1-min.jpg';
 import profilePic2 from '../../public/images/user-2-min.jpg';
 import profilePic3 from '../../public/images/user-3-min.jpg';
@@ -12,7 +12,6 @@ import heroImg from '../../public/images/chalk.jpg';
 import shiftImg from '../../public/images/boulder-1.jpg';
 import testimoniesImg from '../../public/images/ye-nature-2.jpg';
 import styles from './page.module.scss';
-import { Gradient } from '@/components/atoms/gradient';
 
 export default function HomePage() {
   return (
