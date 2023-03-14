@@ -1,19 +1,26 @@
-import styles from './page.module.scss';
+import Image from 'next/image';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
-import { Button, Title } from '@/components/atoms';
+import { Button, Title, Gradient } from '@/components/atoms';
 import profilePic1 from '../../public/images/user-1-min.jpg';
 import profilePic2 from '../../public/images/user-2-min.jpg';
 import profilePic3 from '../../public/images/user-3-min.jpg';
 import profilePic4 from '../../public/images/user-4-min.jpg';
 import profilePic5 from '../../public/images/user-5-min.jpg';
 import profilePic6 from '../../public/images/user-6-min.jpg';
+import heroImg from '../../public/images/chalk.jpg';
+import shiftImg from '../../public/images/boulder-1.jpg';
+import testimoniesImg from '../../public/images/ye-nature-2.jpg';
+import styles from './page.module.scss';
 
 export default function HomePage() {
   return (
     <>
       <main className={styles.main}>
-        <div className={styles.hero__img}>&nbsp;</div>
+        <div className={styles.hero__img}>
+          <Gradient opacity={0.6} variant="rainbowBlue" />
+          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} />
+        </div>
 
         <div className={styles.hero__banner}>
           <h2 className={`${styles.subtitle} ${styles.subtitle__animate__1}`}>
@@ -93,8 +100,9 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className={styles.shift__img__container}>
-            <div className={styles.shift__img}>&nbsp;</div>
+          <div className={styles.shift__img}>
+            <Gradient opacity={0.6} variant="rainbowBlue" />
+            <Image src={shiftImg} alt="person bouldering" fill style={{ objectFit: 'cover' }} />
           </div>
         </div>
       </section>
@@ -109,6 +117,11 @@ export default function HomePage() {
         <Title className="my-8" variant="rainbow-blue">
           Historias
         </Title>
+
+        <div className={styles.testimonies__img}>
+          <Gradient opacity={0.6} variant="manOfSteel" />
+          <Image src={testimoniesImg} alt="boulder wall" fill style={{ objectFit: 'cover', objectPosition: 'fixed' }} />
+        </div>
 
         <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite dots>
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
