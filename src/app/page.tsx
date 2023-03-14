@@ -110,7 +110,7 @@ export default function HomePage() {
           Historias
         </Title>
 
-        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite>
+        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite dots>
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
             <p>Gran ambiente y pura diversión!!</p>
           </ReviewCard>
@@ -135,6 +135,7 @@ export default function HomePage() {
       <section className={styles.location}>
         <div className={styles.location__map}>
           <iframe
+            title="ye center map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.889853241277!2d-103.43646799999999!3d20.633346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ad01239c5de1%3A0x4dbf784f6c56f4b5!2sYE%20Escalada%20%2B%20Yoga%20Center!5e0!3m2!1ses-419!2smx!4v1677639047209!5m2!1ses-419!2smx"
             width="100%"
             height="100%"

@@ -5,7 +5,7 @@ import styles from './whatsapp-button.module.scss';
 
 interface WhatsappButtonProps {
   phone: string;
-  initMsg: string;
+  initMsg?: string;
 }
 
 export function WhatsappButton({ phone, initMsg }: WhatsappButtonProps) {

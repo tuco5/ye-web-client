@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 interface CarouselProps {
   dots?: boolean;
+  dotsClass?: string;
   speed?: number;
   children: React.ReactNode;
   autoplay?: boolean;
