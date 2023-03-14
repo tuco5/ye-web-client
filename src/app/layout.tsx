@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <Navbar />
         {children}
-        <WhatsappButton phone="3221571832" initMsg="Hola!" />
+        <WhatsappButton phone="3330378059" />
         <Footer />
       </body>
     </html>
