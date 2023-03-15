@@ -19,7 +19,7 @@ export default function HomePage() {
       <main className={styles.main}>
         <div className={styles.hero__img}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} />
+          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} loading="eager" />
         </div>
 
         <div className={styles.hero__banner}>
@@ -123,7 +123,7 @@ export default function HomePage() {
           <Image src={testimoniesImg} alt="boulder wall" fill style={{ objectFit: 'cover', objectPosition: 'fixed' }} />
         </div>
 
-        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite dots>
+        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite dots lazyLoad="progressive">
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
             <p>Gran ambiente y pura diversión!!</p>
           </ReviewCard>

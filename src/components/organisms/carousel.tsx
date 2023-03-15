@@ -30,7 +30,6 @@ export function Carousel({ children, ...settings }: CarouselProps) {
       slidesToShow: 1,
       dots: true,
       speed: 500,
-      lazyLoad: 'progressive',
     };
   } else {
     settings = {
