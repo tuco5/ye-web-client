@@ -8,7 +8,7 @@ interface WhatsappButtonProps {
   initMsg?: string;
 }
 
-export function WhatsappButton({ phone, initMsg }: WhatsappButtonProps) {
+export function WhatsappButton({ phone, initMsg = '' }: WhatsappButtonProps) {
   return (
     <div className={styles.container}>
       <Link className={styles.link} target="_blank" href={`https://api.whatsapp.com/send?phone=+521${phone}&text=${initMsg}`}>
