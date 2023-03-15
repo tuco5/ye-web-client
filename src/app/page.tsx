@@ -123,7 +123,7 @@ export default function HomePage() {
           <Image src={testimoniesImg} alt="boulder wall" fill style={{ objectFit: 'cover', objectPosition: 'fixed' }} />
         </div>
 
-        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite dots>
+        <Carousel arrows={false} className={styles.testimonies__carousel} autoplay infinite dots lazyLoad="progressive">
           <ReviewCard name="James" photo={profilePic1} href="https://www.facebook.com/jimymaple/posts/4535790303104167">
             <p>Gran ambiente y pura diversión!!</p>
           </ReviewCard>
