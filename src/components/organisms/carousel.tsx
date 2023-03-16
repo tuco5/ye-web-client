@@ -6,19 +6,23 @@ import 'slick-carousel/slick/slick-theme.css';
 // docs https://react-slick.neostack.com/docs/api
 
 interface CarouselProps {
+  children: React.ReactNode;
+  className?: string;
+
+  arrows?: boolean;
   dots?: boolean;
   dotsClass?: string;
+
+  infinite?: boolean;
   speed?: number;
-  children: React.ReactNode;
+  autoplaySpeed?: number;
   autoplay?: boolean;
+
+  lazyLoad?: 'ondemand' | 'progressive';
   slidesToScroll?: number;
   slidesToShow?: number;
-  className?: string;
   centerMode?: boolean;
-  infinite?: boolean;
-  arrows?: boolean;
   adaptiveHeight?: boolean;
-  lazyLoad?: 'ondemand' | 'progressive';
 }
 
 export function Carousel({ children, ...settings }: CarouselProps) {
@@ -28,8 +32,6 @@ export function Carousel({ children, ...settings }: CarouselProps) {
     settings = {
       ...settings,
       slidesToShow: 1,
-      dots: true,
-      speed: 500,
     };
   } else {
     settings = {
