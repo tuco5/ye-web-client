@@ -19,7 +19,7 @@ export function ReviewCard({ photo, name, href = '#', children }: ReviewCardProp
           <QuotesIcon />
         </div>
         <div className={styles.photo}>
-          <Image src={photo} alt="review avatar" fill />
+          <Image src={photo} alt="review avatar" fill sizes="(max-width:900px) 50px,(max-width:1200px) 60px, 80px" />
         </div>
         <div className={styles.stars}>
           <StarIcon />

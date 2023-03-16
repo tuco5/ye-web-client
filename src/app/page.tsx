@@ -16,10 +16,10 @@ import styles from './page.module.scss';
 export default function HomePage() {
   return (
     <>
-      <main className={styles.main}>
+      <main className={styles.main} id="hero">
         <div className={styles.hero__img}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} loading="eager" />
+          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} loading="eager" sizes="(max-width:900px) 100vw, 65vw" />
         </div>
 
         <div className={styles.hero__banner}>
@@ -37,13 +37,13 @@ export default function HomePage() {
         </div>
       </main>
 
-      <section className={styles.banner}>
+      <section className={styles.banner} id="banner">
         <p className="pb-4">
           El rocódromo más original en Guadalajara Jalisco<span className="green__500">.</span>
         </p>
       </section>
 
-      <section className={styles.features}>
+      <section className={styles.features} id="features">
         <Title className="mt-6 mb-2" variant="rainbow-blue">
           Un concepto de bienestar integral
         </Title>
@@ -107,13 +107,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.banner__2}>
+      <section className={styles.banner__2} id="banner-2">
         <p className="pb-4">
           Ambiente familiar, conexión con la naturaleza, vida al aire libre<span className="green__500">.</span>
         </p>
       </section>
 
-      <section className={styles.testimonies}>
+      <section className={styles.testimonies} id="testimonies">
         <Title className="my-8" variant="rainbow-blue">
           Historias
         </Title>
@@ -145,7 +145,7 @@ export default function HomePage() {
         </Carousel>
       </section>
 
-      <section className={styles.location}>
+      <section className={styles.location} id="location">
         <div className={styles.location__map}>
           <iframe
             title="ye center map"

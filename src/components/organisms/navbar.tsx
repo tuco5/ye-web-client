@@ -1,14 +1,27 @@
 'use client';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from '../atoms';
 import styles from './navbar.module.scss';
+import { useScroll } from '@/hooks';
 
 export function Navbar() {
   const pathname = usePathname();
+  const { scrollY, scrollToTop } = useScroll();
+  const [top, setTop]: any = useState(0);
+
+  useEffect(() => {
+    if (scrollY > 0) {
+      setTop(-110);
+    }
+    if (scrollToTop) {
+      setTop(0);
+    }
+  }, [scrollY, scrollToTop]);
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} id="nav" style={{ top: top }}>
       <div className={styles.container}>
         <Logo />
 
