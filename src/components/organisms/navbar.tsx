@@ -23,7 +23,7 @@ export function Navbar() {
   return (
     <nav className={styles.navbar} id="nav" style={{ top: top }}>
       <div className={styles.container}>
-        <Logo />
+        <Logo className="p-2" />
 
         <div className={styles.menu}>
           <Link href="/prices" className={`${styles.link} ${pathname === '/prices' && styles.active}`}>

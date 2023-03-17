@@ -21,14 +21,20 @@ html {
     // width < 900?
     font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
-
-  @include respond(big-desktop) {
-    font-size: 75%; //1rem = 12, 12/16
-  }
 }
 
 body {
   box-sizing: border-box;
+  @include respond(big-desktop) {
+    margin: 0 auto;
+    max-width: 1600px;
+
+    background-image: linear-gradient(to right bottom, rgba(224, 234, 252, 0.8), rgba(207, 222, 243, 0.8)), url(../../public/images/art-mountain.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 ::selection {
