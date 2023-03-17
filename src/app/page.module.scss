@@ -45,6 +45,10 @@
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
+
+  &__animation {
+    animation: zoomIn 6s ease-in-out 1s infinite alternate backwards;
+  }
 }
 
 .hero__banner {

@@ -19,7 +19,7 @@ export default function HomePage() {
       <main className={styles.main} id="hero">
         <div className={styles.hero__img}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} loading="eager" sizes="(max-width:900px) 100vw, 65vw" />
+          <Image src={heroImg} alt="hero" fill style={{ objectFit: 'cover' }} loading="eager" sizes="(max-width:900px) 100vw, 65vw" className={styles.hero__img__animation} />
         </div>
 
         <div className={styles.hero__banner}>
