@@ -112,8 +112,13 @@
   color: white;
   padding: 4rem;
   @include respond(tab-port) {
-    height: 35vh;
+    height: 40vh;
     font-size: 3.5rem;
+    padding: 2rem;
+  }
+  @include respond(phone) {
+    height: 35vh;
+    font-size: 3rem;
   }
 }
 
@@ -285,10 +290,6 @@
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 92%);
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
-  }
-
-  @include respond(tab-land) {
-    height: 80vh;
   }
 
   &__carousel {

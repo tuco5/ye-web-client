@@ -1,12 +1,17 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './logo.module.scss';
 
 export function Logo({ className }: { className?: string }) {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 20, behavior: 'smooth' });
+  };
+
   return (
     <div className={className}>
-      <Link href="/" className={styles.container}>
+      <Link href="/" className={styles.container} onClick={scrollToTop}>
         <div className={styles.logo}>
           <Image className={styles.image} src="/images/logo.png" alt="logo" fill sizes="(max-width:600px) 75px, 100px" />
         </div>

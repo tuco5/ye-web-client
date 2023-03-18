@@ -4,4 +4,3 @@ export { Button } from './button';
 export { WhatsappButton } from './whatsapp-button';
 export { Title } from './title';
 export { Subtitle } from './subtitle';
-export { Gradient } from './gradient';

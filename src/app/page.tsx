@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
-import { Button, Title, Gradient } from '@/components/atoms';
+import { Button, Title } from '@/components/atoms';
+import { Gradient } from '@/components/utils';
 import profilePic1 from '../../public/images/user-1-min.jpg';
 import profilePic2 from '../../public/images/user-2-min.jpg';
 import profilePic3 from '../../public/images/user-3-min.jpg';
@@ -38,7 +39,7 @@ export default function HomePage() {
       </main>
 
       <section className={styles.banner} id="banner">
-        <p className="pb-4">
+        <p className="p-4">
           El rocódromo más original en Guadalajara Jalisco<span className="green__500">.</span>
         </p>
       </section>
@@ -108,7 +109,7 @@ export default function HomePage() {
       </section>
 
       <section className={styles.banner__2} id="banner-2">
-        <p className="pb-4">
+        <p className="pb-2">
           Ambiente familiar, conexión con la naturaleza, vida al aire libre<span className="green__500">.</span>
         </p>
       </section>
