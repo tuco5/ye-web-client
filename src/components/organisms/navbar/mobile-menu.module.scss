@@ -90,6 +90,7 @@
 .menu {
   position: fixed;
   z-index: 150;
+  visibility: hidden;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
@@ -106,6 +107,7 @@
 }
 
 .activeMenu {
+  visibility: visible;
   width: 100%;
   opacity: 1;
   left: 50%;
