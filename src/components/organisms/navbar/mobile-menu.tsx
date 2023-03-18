@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import menuData from './menu-data.json';
 import styles from './mobile-menu.module.scss';
 
 export function MobileMenu() {
@@ -19,7 +21,13 @@ export function MobileMenu() {
 
       <div className={`${styles.background} ${animate && styles.activeBackground}`}>&nbsp;</div>
 
-      <ul className={`${styles.menu} ${animate && styles.activeMenu}`}>menu</ul>
+      <div className={`${styles.menu} ${animate && styles.activeMenu}`}>
+        {menuData.map(({ id, name, href }) => (
+          <Link key={id} href={href} className={styles.link} onClick={() => setIsActive(false)}>
+            {name}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

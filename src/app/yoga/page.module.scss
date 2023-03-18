@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+
+  background-image: linear-gradient(to right bottom, rgba(120, 2, 6, 0.5), rgba(6, 17, 97, 0.7)), url('/images/ruta-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}

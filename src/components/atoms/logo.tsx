@@ -11,7 +11,7 @@ export function Logo({ className }: { className?: string }) {
 
   return (
     <div className={className}>
-      <Link href="/" className={styles.container} onClick={scrollToTop}>
+      <Link href="/" className={styles.container} onClick={scrollToTop} scroll={true}>
         <div className={styles.logo}>
           <Image className={styles.image} src="/images/logo.png" alt="logo" fill sizes="(max-width:600px) 75px, 100px" />
         </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Escalada",
+    "href": "/climbing"
+  },
+  {
+    "id": 2,
+    "name": "Yoga",
+    "href": "/yoga"
+  },
+  {
+    "id": 3,
+    "name": "Cultura",
+    "href": "/about-us"
+  },
+  {
+    "id": 4,
+    "name": "Recursos",
+    "href": "/resources"
+  }
+]
