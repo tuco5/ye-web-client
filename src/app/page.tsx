@@ -83,12 +83,11 @@ export default function HomePage() {
               Los miembros del equipo de alto rendimiento no solo están orientados para la consecución de una misión concreta, sino que también están unidos por valores comunes, comparten visión,
               objetivos y métricas, colaboran, se desafían y se responsabilizan de manera mutua para obtener resultados sobresalientes.
             </p>
-            <p className="text p-1 mb-2">
-              Unete a nuestro equipo Juvenil{' '}
-              <Button variant={BtnVariant.text} type="link" href="/prices#family">
-                aqui &rarr;
-              </Button>
-            </p>
+            <p className="text p-1 mb-2">Si buscas llevar tus capacidades al límite y representar a tu estado en la siguiente competencía, unete al equipo Juvenil</p>
+
+            <Button variant={BtnVariant.text} type="link" href="/prices#climbing">
+              Mas informes &rarr;
+            </Button>
           </div>
 
           <div className={styles.team__pictures}>

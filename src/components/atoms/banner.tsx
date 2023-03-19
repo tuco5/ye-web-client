@@ -6,9 +6,5 @@ interface BannerProps {
 }
 
 export function Banner({ children, className }: BannerProps) {
-  return (
-    <section className={`${styles.banner} ${className}`}>
-      <p className="p-4">{children}</p>
-    </section>
-  );
+  return <section className={`${styles.banner} ${className}`}>{children}</section>;
 }
