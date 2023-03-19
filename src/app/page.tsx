@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
-import { Button, BtnVariant, Title } from '@/components/atoms';
+import { Button, BtnVariant, Title, Banner } from '@/components/atoms';
 import { Gradient } from '@/components/utils';
 import profilePic1 from '../../public/images/user-1-min.jpg';
 import profilePic2 from '../../public/images/user-2-min.jpg';
@@ -41,11 +41,11 @@ export default function HomePage() {
         </div>
       </main>
 
-      <section className={styles.banner} id="banner">
-        <p className="p-4">
+      <Banner>
+        <p>
           El rocódromo más original en Guadalajara Jalisco<span className="green__500">.</span>
         </p>
-      </section>
+      </Banner>
 
       <section className={styles.features} id="features">
         <Title className="mt-6 mb-2" variant="rainbow-blue">
@@ -85,7 +85,7 @@ export default function HomePage() {
             </p>
             <p className="text p-1 mb-2">
               Unete a nuestro equipo Juvenil{' '}
-              <Button variant={BtnVariant.text} type="link" href="/prices#team">
+              <Button variant={BtnVariant.text} type="link" href="/prices#family">
                 aqui &rarr;
               </Button>
             </p>
