@@ -1,0 +1,57 @@
+@import '/src/sass/variables';
+@import '/src/sass/mixins';
+
+.card {
+  position: relative;
+  height: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: $moor-gradient;
+  border-radius: 4px;
+  box-shadow: 0.3rem 0.8rem 1.5rem rgba(black, 0.2);
+
+  &__image {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover + .card__text {
+      opacity: 1;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 6.5rem;
+    z-index: 150;
+    color: white;
+    transition: all 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__link {
+    width: 90%;
+    text-align: center;
+    color: $blue-500;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+  &__maps {
+    margin-top: 2rem;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}

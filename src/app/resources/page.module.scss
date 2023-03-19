@@ -1,14 +1,80 @@
+@import '/src/sass/variables';
+@import '/src/sass/mixins';
+
 .section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: white;
 
-  background-image: linear-gradient(to right bottom, rgba(120, 2, 6, 0.5), rgba(6, 17, 97, 0.7)), url('/images/ruta-2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
+  &__title {
+    margin: 8rem 0 6rem;
+  }
+
+  &__grid {
+    display: grid;
+    width: 95%;
+    grid-template-rows: repeat(auto-fit, 210px);
+    grid-template-columns: repeat(auto-fit, 180px);
+    grid-gap: 1.5rem;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: $moor-gradient;
+  border-radius: 4px;
+  box-shadow: 0.3rem 0.8rem 1.5rem rgba(black, 0.2);
+
+  &__image {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover + .card__text {
+      opacity: 1;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 6.5rem;
+    z-index: 150;
+    color: white;
+    transition: all 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__link {
+    width: 90%;
+    text-align: center;
+    color: $blue-500;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: orangered;
+    }
+  }
+  &__maps {
+    margin-top: 2rem;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
 }
