@@ -4,7 +4,7 @@ import styles from './footer.module.scss';
 
 export function Footer() {
   return (
-    <footer className={styles.container}>
+    <footer className={styles.container} id="footer">
       <div className={styles.banner}>
         Apunta <span className="green__500">A</span>lto
       </div>

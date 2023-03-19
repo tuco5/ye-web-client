@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Precios",
+    "href": "/prices"
+  },
+  {
+    "id": 2,
+    "name": "Cultura",
+    "href": "/about-us"
+  },
+  {
+    "id": 3,
+    "name": "Recursos",
+    "href": "/resources"
+  }
+]

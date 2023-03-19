@@ -24,7 +24,7 @@
   width: 100px;
   height: 50px;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     width: 70px;
     height: 35px;
   }
@@ -43,7 +43,7 @@
   transition: all 0.2s ease-out;
   white-space: nowrap;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     font-size: 0.9rem;
     letter-spacing: 1px;
   }
