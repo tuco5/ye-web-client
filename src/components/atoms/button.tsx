@@ -1,14 +1,20 @@
 import styles from './button.module.scss';
 
+export enum BtnVariant {
+  main = 'main',
+  text = 'text',
+}
+
 interface ButtonProps {
   children: React.ReactNode;
-  variant: 'main' | 'text';
+  variant: BtnVariant;
   type?: 'button' | 'link';
+  onClick?: () => void;
   href?: string;
   className?: string;
 }
 
-export function Button({ children, href = '#', variant, type = 'button', className }: ButtonProps) {
+export function Button({ children, href = '#', variant, type = 'button', className, onClick }: ButtonProps) {
   className = `${className} ${styles[variant]}`;
   if (type === 'link') {
     return (
@@ -19,7 +25,7 @@ export function Button({ children, href = '#', variant, type = 'button', classNa
   }
 
   return (
-    <button type="button" className={className}>
+    <button type="button" className={className} onClick={onClick}>
       {children}
     </button>
   );

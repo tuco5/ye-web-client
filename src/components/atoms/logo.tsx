@@ -6,7 +6,7 @@ import styles from './logo.module.scss';
 
 export function Logo({ className }: { className?: string }) {
   const scrollToTop = () => {
-    window.scrollTo({ top: 20, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

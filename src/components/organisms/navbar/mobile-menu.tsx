@@ -22,6 +22,9 @@ export function MobileMenu() {
       <div className={`${styles.background} ${animate && styles.activeBackground}`}>&nbsp;</div>
 
       <div className={`${styles.menu} ${animate && styles.activeMenu}`}>
+        <Link href="/" className={styles.link} onClick={() => setIsActive(false)}>
+          Inicio
+        </Link>
         {menuData.map(({ id, name, href }) => (
           <Link key={id} href={href} className={styles.link} onClick={() => setIsActive(false)}>
             {name}

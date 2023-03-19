@@ -8,7 +8,7 @@ export function DesktopMenu() {
   return (
     <div className={styles.menu}>
       {menuData.map(({ id, name, href }) => (
-        <Link key={id} href={href} className={`${styles.link} ${pathname === '/prices' && styles.active}`}>
+        <Link key={id} href={href} className={`${styles.link} ${pathname === href && styles.active}`}>
           {name}
         </Link>
       ))}

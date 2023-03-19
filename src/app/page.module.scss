@@ -159,11 +159,105 @@
   }
 }
 
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 3rem 0 10rem;
+  background-color: #fafafa;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: start;
+    }
+  }
+
+  &__description {
+    width: 50%;
+    font-size: 2rem;
+    line-height: 1.5;
+    padding: 2rem 6rem;
+    @include respond(tab-port) {
+      width: 80%;
+    }
+    @include respond(phone) {
+      width: 95%;
+      padding: 2rem 2rem;
+    }
+  }
+  &__pictures {
+    position: relative;
+    width: 50%;
+    max-width: 540px;
+
+    min-height: 35rem;
+
+    @include respond(big-desktop) {
+      max-width: 650px;
+      min-height: 40rem;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+      max-width: 440px;
+    }
+    @include respond(phone) {
+      padding: 0 4rem;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.4);
+    transition: all 0.2s;
+    outline-offset: 2rem;
+    width: 30rem;
+    height: 20rem;
+    @include respond(big-desktop) {
+      width: 36rem;
+      height: 24rem;
+    }
+    @include respond(phone) {
+      width: 25rem;
+      height: 17rem;
+    }
+
+    &:hover {
+      outline: 1.5rem solid $green-500;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(black, 0.5);
+      z-index: 20;
+    }
+    &__1 {
+      top: 8rem;
+      z-index: 2;
+    }
+    &__2 {
+      top: 0;
+      right: 5rem;
+      z-index: 1;
+    }
+    &__3 {
+      top: 18rem;
+      right: 10rem;
+      z-index: 3;
+    }
+  }
+}
+
 .shift {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fafafa;
+  background-color: white;
   height: 90vh;
   @include respond(tab-port) {
     background-color: transparent;
@@ -263,7 +357,7 @@
     }
 
     @include respond(tab-port) {
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.9);
       margin-right: 0;
       border-radius: 4px;
     }

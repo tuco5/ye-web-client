@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Carousel } from '@/components/organisms';
 import { FeatureBox, ReviewCard } from '@/components/molecules';
-import { Button, Title } from '@/components/atoms';
+import { Button, BtnVariant, Title } from '@/components/atoms';
 import { Gradient } from '@/components/utils';
 import profilePic1 from '../../public/images/user-1-min.jpg';
 import profilePic2 from '../../public/images/user-2-min.jpg';
@@ -9,6 +9,9 @@ import profilePic3 from '../../public/images/user-3-min.jpg';
 import profilePic4 from '../../public/images/user-4-min.jpg';
 import profilePic5 from '../../public/images/user-5-min.jpg';
 import profilePic6 from '../../public/images/user-6-min.jpg';
+import teamPic1 from '../../public/images/team-1.jpg';
+import teamPic2 from '../../public/images/team-2.jpg';
+import teamPic3 from '../../public/images/team-3.jpg';
 import heroImg from '../../public/images/chalk.jpg';
 import shiftImg from '../../public/images/boulder-1.jpg';
 import testimoniesImg from '../../public/images/ye-nature-2.jpg';
@@ -31,7 +34,7 @@ export default function HomePage() {
             More Chalk<span className="green__500">.</span>
           </h2>
           <div className={styles.hero__cta}>
-            <Button href="/prices" type="link" variant="main" className={styles.hero__cta__animation}>
+            <Button href="/prices" type="link" variant={BtnVariant.main} className={styles.hero__cta__animation}>
               Informes
             </Button>
           </div>
@@ -70,6 +73,38 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className={styles.team} id="team">
+        <Title className="my-6" variant="rainbow-blue">
+          Orgullosos del equipo juvenil
+        </Title>
+        <div className={styles.team__container}>
+          <div className={styles.team__description}>
+            <p className="text p-1 mb-2">
+              Los miembros del equipo de alto rendimiento no solo están orientados para la consecución de una misión concreta, sino que también están unidos por valores comunes, comparten visión,
+              objetivos y métricas, colaboran, se desafían y se responsabilizan de manera mutua para obtener resultados sobresalientes.
+            </p>
+            <p className="text p-1 mb-2">
+              Unete a nuestro equipo Juvenil{' '}
+              <Button variant={BtnVariant.text} type="link" href="/prices#team">
+                aqui &rarr;
+              </Button>
+            </p>
+          </div>
+
+          <div className={styles.team__pictures}>
+            <div className={`${styles.team__picture} ${styles.team__picture__1}`}>
+              <Image src={teamPic1} alt="team" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className={`${styles.team__picture} ${styles.team__picture__2}`}>
+              <Image src={teamPic2} alt="team" fill style={{ objectFit: 'cover', objectPosition: 'top' }} />
+            </div>
+            <div className={`${styles.team__picture} ${styles.team__picture__3}`}>
+              <Image src={teamPic3} alt="team" fill style={{ objectFit: 'cover' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="shift" className={styles.shift}>
         <div className={styles.shift__container}>
           <div className={styles.shift__content}>
@@ -91,10 +126,10 @@ export default function HomePage() {
             <div className={`${styles.shift__text__group} mt-3`}>
               <p className={styles.shift__text__1}>Costos</p>
               <ul className={styles.shift__menu}>
-                <Button href="/prices/#climbing" variant="text" type="link">
+                <Button href="/prices#climbing" variant={BtnVariant.text} type="link">
                   Escalada &rarr;
                 </Button>
-                <Button href="/prices#yoga" variant="text" type="link">
+                <Button href="/prices#yoga" variant={BtnVariant.text} type="link">
                   Yoga &rarr;
                 </Button>
               </ul>
@@ -108,7 +143,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className={styles.banner__2} id="banner-2">
+      <section className={styles.banner__2} id="banner-3">
         <p className="pb-2">
           Ambiente familiar, conexión con la naturaleza, vida al aire libre<span className="green__500">.</span>
         </p>
