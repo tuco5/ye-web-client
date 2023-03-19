@@ -13,11 +13,10 @@ export default function InfoPage() {
     <>
       {/* CLIMBING */}
       <section className={styles.section} id="climbing">
-        <div className={styles.section__content}>
+        <div className={`${styles.section__content} mt-6`}>
           <Title variant="rainbow-blue" className={styles.section__title}>
-            Escalada
+            Membresía Escalada
           </Title>
-          <Subtitle className={styles.section__subtitle}>Membresia</Subtitle>
           <Grid.Container>
             <Grid.Item price="$790" caveat="( Incluye escalada ilimitada + 2 cortesías )">
               Mensual
@@ -61,9 +60,8 @@ export default function InfoPage() {
 
         <div className={styles.section__content}>
           <Title variant="rainbow-blue" className={styles.section__title}>
-            Yoga
+            Membresía Yoga
           </Title>
-          <Subtitle className={styles.section__subtitle}>Membresia</Subtitle>
           <Grid.Container>
             <Grid.Item price="$380">Mensual 4 clases</Grid.Item>
             <Grid.Item price="$650">Mensual 8 clases</Grid.Item>
@@ -88,9 +86,8 @@ export default function InfoPage() {
       <section className={styles.section} id="member">
         <div className={styles.section__content}>
           <Title variant="rainbow-blue" className={styles.section__title}>
-            Paquete Ye Plus
+            Paquete Membresía Ye Plus
           </Title>
-          <Subtitle className={styles.section__subtitle}>Membresia</Subtitle>
           <Grid.Container>
             <Grid.Item price="$1,390" caveat="( Escalada ilimitado, Yoga Ilimitado, consulta nutricional mensual, uso de instalaciones )">
               Ye plus Mensual
