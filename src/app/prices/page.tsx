@@ -114,7 +114,7 @@ export default function InfoPage() {
       </section>
 
       {/* FAMILY  */}
-      <section className={`${styles.section} ${styles.section__yoga}`} id="yoga">
+      <section className={`${styles.section} ${styles.section__yoga}`} id="family">
         <div className={`${styles.img__2} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
           <Image src={familyPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'right' }} sizes="(max-width:600px) 100vw, 50vw" />

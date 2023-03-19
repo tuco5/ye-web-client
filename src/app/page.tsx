@@ -85,7 +85,7 @@ export default function HomePage() {
             </p>
             <p className="text p-1 mb-2">
               Unete a nuestro equipo Juvenil{' '}
-              <Button variant={BtnVariant.text} type="link" href="/prices#team">
+              <Button variant={BtnVariant.text} type="link" href="/prices#family">
                 aqui &rarr;
               </Button>
             </p>
