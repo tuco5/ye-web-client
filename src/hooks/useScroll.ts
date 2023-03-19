@@ -2,17 +2,18 @@ import { useState, useEffect } from 'react';
 
 interface ScrollData {
   scrollY: number;
-  scrollToTop: boolean;
+  scrollingUp: boolean;
+  scrollToTop: (behavior: ScrollBehavior) => void;
 }
 
 export function useScroll(): ScrollData {
   const [scrollY, setScrollY] = useState(0);
-  const [scrollToTop, setScrollToTop] = useState(false);
+  const [scrollingUp, setScrollingUp] = useState(false);
 
   useEffect(() => {
     const handleScroll = (_: Event) => {
       setScrollY((scrollY) => {
-        setScrollToTop(scrollY > window.scrollY);
+        setScrollingUp(scrollY > window.scrollY);
         return window.scrollY;
       });
     };
@@ -23,5 +24,7 @@ export function useScroll(): ScrollData {
     };
   }, []);
 
-  return { scrollY, scrollToTop };
+  const scrollToTop = (behavior: ScrollBehavior) => window.scrollTo({ top: 0, behavior: behavior });
+
+  return { scrollY, scrollingUp, scrollToTop };
 }

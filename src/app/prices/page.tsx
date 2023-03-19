@@ -13,30 +13,38 @@ export default function InfoPage() {
     <>
       {/* CLIMBING */}
       <section className={styles.section} id="climbing">
-        <div className={`${styles.section__content} mt-6`}>
+        <div className={`${styles.section__content} mt-8`}>
           <Title variant="rainbow-blue" className={styles.section__title}>
             Membresía Escalada
           </Title>
           <Grid.Container>
-            <Grid.Item price="$790" caveat="( Incluye escalada ilimitada + 2 cortesías )">
-              Mensual
+            <Grid.Item price="$1,100" caveat="(Costo mensual. Entrenos martes, jueves y sábados)">
+              Equipo YE 3 sesiones
             </Grid.Item>
-            <Grid.Item price="$720" caveat="( Paquete para parejas. Precio por persona + 1 cortesías por persona )">
-              Cordada Mensual
+            <Grid.Item price="$690" caveat="(Costo mensual. Entrenos martes y jueves)">
+              Equipo YE 2 sesiones
             </Grid.Item>
-            <Grid.Item price="$2,190" caveat="( Incluye escalada ilimitada + 6 cortesías )">
+            <Grid.Item price="$790" caveat="(Incluye escalada ilimitada + 2 cortesías)">
+              Mes por Mono 🐒
+            </Grid.Item>
+            <Grid.Item price="$720" caveat="(Paquete para parejas. Precio por persona + 1 cortesías por persona)">
+              Mes por Cordada 🐵 🐵
+            </Grid.Item>
+            <Grid.Item>---</Grid.Item>
+            <Grid.Item price="$2,190" caveat="(Incluye escalada ilimitada + 6 cortesías)">
               Trimestral
             </Grid.Item>
-            <Grid.Item price="$4,190" caveat="( Incluye escalada ilimitada + 8 cortesías )">
+            <Grid.Item price="$4,190" caveat="(Incluye escalada ilimitada + 8 cortesías)">
               Semestral
             </Grid.Item>
-            <Grid.Item price="$7,900" caveat="( Incluye escalada ilimitada + 12 cortesías )">
+            <Grid.Item price="$7,900" caveat="(Incluye escalada ilimitada + 12 cortesías)">
               Anual
             </Grid.Item>
-            <Grid.Item price="$100" caveat="( Incluye escalada ilimitada + 12 cortesías )">
+            <Grid.Item>---</Grid.Item>
+            <Grid.Item price="$100" caveat="(Incluye escalada ilimitada + 12 cortesías)">
               Visita Socio
             </Grid.Item>
-            <Grid.Item price="$150" caveat="( Para usuarios no inscritos )">
+            <Grid.Item price="$150" caveat="(Para usuarios no inscritos)">
               Visita Foranea
             </Grid.Item>
           </Grid.Container>
@@ -63,9 +71,11 @@ export default function InfoPage() {
             Membresía Yoga
           </Title>
           <Grid.Container>
-            <Grid.Item price="$380">Mensual 4 clases</Grid.Item>
-            <Grid.Item price="$650">Mensual 8 clases</Grid.Item>
-            <Grid.Item price="$850">Mensual 12 clases</Grid.Item>
+            <Grid.Item price="$99">1 clase suelta</Grid.Item>
+            <Grid.Item price="$380">4 clases por mes</Grid.Item>
+            <Grid.Item price="$650">8 clases por mes</Grid.Item>
+            <Grid.Item price="$850">12 clases por mes</Grid.Item>
+            <Grid.Item>---</Grid.Item>
             <Grid.Item price="$990">Ilimitado</Grid.Item>
             <Grid.Item price="$2,250">Trimestral</Grid.Item>
             <Grid.Item price="$4,300">Semestral</Grid.Item>
@@ -79,7 +89,7 @@ export default function InfoPage() {
       </section>
 
       <Banner>
-        Para clientes recurrentes existen los paquetes<span className="green__500">.</span>
+        Para clientes recurrentes tenemos paquetes<span className="green__500">.</span>
       </Banner>
 
       {/* MEMBER */}
@@ -89,15 +99,21 @@ export default function InfoPage() {
             Paquete Membresía Ye Plus
           </Title>
           <Grid.Container>
-            <Grid.Item price="$1,390" caveat="( Escalada ilimitado, Yoga Ilimitado, consulta nutricional mensual, uso de instalaciones )">
+            <Grid.Item price="$1,390" caveat="(Escalada y Yoga ilimitado, consulta nutricional mensual + 2 cortesías)">
               Ye plus Mensual
             </Grid.Item>
-            <Grid.Item price="$1,190" caveat="( Escalada ilimitado, Yoga Ilimitado, uso de instalaciones )">
+            <Grid.Item price="$1,190" caveat="(Escalada y Yoga ilimitado + 2 cortesías)">
               Ye Mensual
             </Grid.Item>
-            <Grid.Item price="$3,360">Ye Trimestral</Grid.Item>
-            <Grid.Item price="$6,594">Ye Semestral</Grid.Item>
-            <Grid.Item price="$12,600">Ye Anual</Grid.Item>
+            <Grid.Item price="$3,360" caveat="(Escalada y Yoga ilimitado + 6 cortesías)">
+              Ye Trimestral
+            </Grid.Item>
+            <Grid.Item price="$6,594" caveat="(Escalada y Yoga ilimitado + 8 cortesías)">
+              Ye Semestral
+            </Grid.Item>
+            <Grid.Item price="$12,600" caveat="(Escalada y Yoga ilimitado + 12 cortesías)">
+              Ye Anual
+            </Grid.Item>
           </Grid.Container>
 
           <Subtitle className={styles.section__inscription}>
@@ -121,23 +137,24 @@ export default function InfoPage() {
           <Title variant="rainbow-blue" className={styles.section__title}>
             Ye Family
           </Title>
-          <Subtitle className={styles.section__subtitle}>Membresia</Subtitle>
           <Grid.Container>
-            <Grid.Item price="$1,200" caveat="( niños YE + practica de yoga para mamá o papá 2 veces por semana o niños YE + acondicionamiento físico para mamá o papá )">
+            <Grid.Item price="$1,350" caveat="(niños YE + practica de yoga para mamá o papá 2 veces por semana o niños YE + acondicionamiento físico para mamá o papá)">
               Program Family plus
             </Grid.Item>
-            <Grid.Item price="$590" caveat="( 2 clases por semana )">
+            <Grid.Item>---</Grid.Item>
+            <Grid.Item price="$690" caveat="(2 clases por semana)">
               Membresía niños escalada
             </Grid.Item>
-            <Grid.Item price="$680" caveat="( Escalada 2 clases por semana + Yoga 1 clase por semana )">
-              Membresía niños escalada
+            <Grid.Item price="$1,180" caveat="(Escalada 2 clases por semana + 1 clase arte marcial)">
+              Membresía niños YE bird
             </Grid.Item>
-            <Grid.Item price="$120">Visita boulder niños</Grid.Item>
-            <Grid.Item price="$120">Clases escalada o yoga niños</Grid.Item>
+            <Grid.Item>---</Grid.Item>
+            <Grid.Item price="$80">Visita boulder niños</Grid.Item>
+            <Grid.Item price="$150">Clases escalada niños</Grid.Item>
           </Grid.Container>
 
           <Subtitle className={styles.section__inscription}>
-            Inscripcion niños <span className={styles.section__price}>$60</span>
+            Inscripcion niños <span className={styles.section__price}>$250</span>
           </Subtitle>
         </div>
       </section>

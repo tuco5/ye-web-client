@@ -9,17 +9,17 @@ import { MobileMenu } from './mobile-menu';
 
 export function Navbar() {
   const [top, setTop]: any = useState(0);
-  const { scrollY, scrollToTop } = useScroll();
+  const { scrollY, scrollingUp } = useScroll();
   const { width } = useWindowSize();
 
   useEffect(() => {
     if (scrollY > 110) {
       setTop(-110);
     }
-    if (scrollToTop) {
+    if (scrollingUp) {
       setTop(0);
     }
-  }, [scrollY, scrollToTop]);
+  }, [scrollY, scrollingUp]);
 
   return (
     <nav className={styles.navbar} id="nav" style={{ top: top }}>

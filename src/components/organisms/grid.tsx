@@ -10,17 +10,17 @@ export function Container({ children }: ContainerProps) {
 interface ItemProps {
   children: React.ReactNode;
   caveat?: string;
-  price: string;
+  price?: string;
 }
 export function Item({ children, caveat, price }: ItemProps) {
   return (
     <>
       <div className={styles.item}>
-        <div className={styles.item__description}>{children}</div>
-        <div className={styles.item__caveat}>{caveat}</div>
+        <p className={styles.item__description}>{children}</p>
+        <p className={styles.item__caveat}>{caveat}</p>
       </div>
       <div className={styles.item}>
-        <div className={styles.item__price}>{price}</div>
+        <p className={styles.item__price}>{price}</p>
       </div>
     </>
   );

@@ -2,24 +2,20 @@
 @import '/src/sass/mixins';
 
 .banner {
-  height: 50vh;
+  height: fit-content;
   background-color: $cold-gray-400;
   letter-spacing: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 5rem;
   text-align: center;
   font-weight: 300;
   color: white;
-  padding: 4rem;
+  padding: 12rem 8rem;
   @include respond(tab-port) {
-    height: 40vh;
     font-size: 3.5rem;
-    padding: 2rem;
+    padding: 10rem 8rem;
   }
   @include respond(phone) {
-    height: 35vh;
     font-size: 3rem;
+    padding: 8rem 4rem;
   }
 }
