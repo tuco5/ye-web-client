@@ -13,6 +13,11 @@
   border-radius: 4px;
   box-shadow: 0.3rem 0.8rem 1.5rem rgba(black, 0.2);
 
+  @include respond(tab-port) {
+    box-shadow: none;
+    background-image: none;
+  }
+
   &__image {
     position: relative;
     width: 10rem;
@@ -21,23 +26,28 @@
     overflow: hidden;
 
     &:hover + .card__text {
-      opacity: 1;
+      opacity: 0;
     }
   }
   &__text {
     position: absolute;
-    top: 6.5rem;
+    width: 60%;
+    top: 6rem;
     z-index: 150;
     color: white;
     transition: all 0.2s ease;
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
   }
   &__link {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
     color: $blue-500;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
 
     &:hover {
       color: orangered;
@@ -46,8 +56,7 @@
   &__maps {
     margin-top: 2rem;
     position: relative;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.4rem;
     transition: all 0.2s ease-in;
 
     &:hover {
