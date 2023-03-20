@@ -30,7 +30,12 @@ export default function InfoPage() {
             <Grid.Item price="$720" caveat="(Paquete para parejas. Precio por persona + 1 cortesías por persona)">
               Mes por Cordada 🐵 🐵
             </Grid.Item>
-            <Grid.Item>---</Grid.Item>
+            <Grid.Item price="$100" caveat="(Incluye escalada ilimitada + 12 cortesías)">
+              Visita Socio
+            </Grid.Item>
+            <Grid.Item price="$150" caveat="(Para usuarios no inscritos)">
+              Visita Foranea
+            </Grid.Item>
             <Grid.Item price="$2,190" caveat="(Incluye escalada ilimitada + 6 cortesías)">
               Trimestral
             </Grid.Item>
@@ -40,18 +45,7 @@ export default function InfoPage() {
             <Grid.Item price="$7,900" caveat="(Incluye escalada ilimitada + 12 cortesías)">
               Anual
             </Grid.Item>
-            <Grid.Item>---</Grid.Item>
-            <Grid.Item price="$100" caveat="(Incluye escalada ilimitada + 12 cortesías)">
-              Visita Socio
-            </Grid.Item>
-            <Grid.Item price="$150" caveat="(Para usuarios no inscritos)">
-              Visita Foranea
-            </Grid.Item>
           </Grid.Container>
-
-          <Subtitle className={styles.section__inscription}>
-            Inscripcion <span className={styles.section__price}>$250</span>
-          </Subtitle>
         </div>
         <div className={`${styles.img__1} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
@@ -63,7 +57,7 @@ export default function InfoPage() {
       <section className={`${styles.section} ${styles.section__yoga}`} id="yoga">
         <div className={`${styles.img__2} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={yogaPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover' }} sizes="(max-width:600px) 100vw, 50vw" />
+          <Image src={yogaPic} alt="woman doing yoga in ye center" fill style={{ objectFit: 'cover' }} sizes="(max-width:600px) 100vw, 50vw" />
         </div>
 
         <div className={styles.section__content}>
@@ -122,7 +116,7 @@ export default function InfoPage() {
         </div>
         <div className={`${styles.img__1} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={memberPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'center' }} sizes="(max-width:600px) 100vw, 50vw" />
+          <Image src={memberPic} alt="woman bouldering in ye center" fill style={{ objectFit: 'cover', objectPosition: 'center' }} sizes="(max-width:600px) 100vw, 50vw" />
         </div>
       </section>
 
@@ -130,7 +124,7 @@ export default function InfoPage() {
       <section className={`${styles.section} ${styles.section__yoga}`} id="family">
         <div className={`${styles.img__2} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={familyPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'center' }} sizes="(max-width:600px) 100vw, 50vw" />
+          <Image src={familyPic} alt="family chilling at ye center" fill style={{ objectFit: 'cover', objectPosition: 'center' }} sizes="(max-width:600px) 100vw, 50vw" />
         </div>
 
         <div className={styles.section__content}>
