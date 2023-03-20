@@ -3,8 +3,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Gradient } from '@/components/utils';
-import { useWindowSize } from '@/hooks';
-import { tabLand } from '@/constants/breakpoints';
 import styles from './resources-card.module.scss';
 
 interface ResourceCardProps {
@@ -15,11 +13,6 @@ interface ResourceCardProps {
 }
 export function ResourcesCard({ image, name, resourcePath, locationHref }: ResourceCardProps) {
   const [hoverEffect, setHoverEffect] = useState(false);
-  const { width } = useWindowSize();
-
-  useEffect(() => {
-    setHoverEffect(width <= tabLand);
-  }, [width]);
 
   return (
     <div className={styles.card}>
@@ -29,10 +22,11 @@ export function ResourcesCard({ image, name, resourcePath, locationHref }: Resou
           <Image src={image} alt="resource portrait" width={110} height={110} />
         </div>
         <p className={styles.card__text}>{name}</p>
-        Descargar
+        <p className="mt-1"> Descargar</p>
       </a>
       <Link className={styles.card__maps} href={locationHref} target="_blank">
-        <Image src="/icons/google-maps.png" alt="location icon" width={24} height={24} />
+        <Image src="/icons/google-maps.png" alt="location icon" width={15} height={15} />
+        <p>Ubicacion</p>
       </Link>
     </div>
   );
