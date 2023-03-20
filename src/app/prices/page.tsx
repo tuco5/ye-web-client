@@ -122,7 +122,7 @@ export default function InfoPage() {
         </div>
         <div className={`${styles.img__1} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={memberPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'left' }} sizes="(max-width:600px) 100vw, 50vw" />
+          <Image src={memberPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'center' }} sizes="(max-width:600px) 100vw, 50vw" />
         </div>
       </section>
 
@@ -130,7 +130,7 @@ export default function InfoPage() {
       <section className={`${styles.section} ${styles.section__yoga}`} id="family">
         <div className={`${styles.img__2} ${styles.section__img}`}>
           <Gradient opacity={0.6} variant="rainbowBlue" />
-          <Image src={familyPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'right' }} sizes="(max-width:600px) 100vw, 50vw" />
+          <Image src={familyPic} alt="man climbing in ye center" fill style={{ objectFit: 'cover', objectPosition: 'center' }} sizes="(max-width:600px) 100vw, 50vw" />
         </div>
 
         <div className={styles.section__content}>

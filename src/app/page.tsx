@@ -75,15 +75,15 @@ export default function HomePage() {
 
       <section className={styles.team} id="team">
         <Title className="my-6" variant="rainbow-blue">
-          Orgullosos del equipo juvenil
+          Forjando nuevo talento
         </Title>
         <div className={styles.team__container}>
           <div className={styles.team__description}>
             <p className="text p-1 mb-2">
-              Los miembros del equipo de alto rendimiento no solo están orientados para la consecución de una misión concreta, sino que también están unidos por valores comunes, comparten visión,
-              objetivos y métricas, colaboran, se desafían y se responsabilizan de manera mutua para obtener resultados sobresalientes.
+              Los miembros del equipo no solo están orientados para la consecución de una misión concreta, sino que también están unidos por valores comunes, comparten visión, objetivos y métricas,
+              colaboran, se desafían y se responsabilizan de manera mutua para obtener resultados sobresalientes.
             </p>
-            <p className="text p-1 mb-2">Si buscas llevar tus capacidades al límite y representar a tu estado en la siguiente competencía, unete al equipo Juvenil</p>
+            <p className="text p-1 mb-2">Si buscas llevar tus capacidades al límite unete al equipo Juvenil.</p>
 
             <Button variant={BtnVariant.text} type="link" href="/prices#climbing">
               Mas informes &rarr;
