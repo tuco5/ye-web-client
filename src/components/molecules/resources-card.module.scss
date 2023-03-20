@@ -40,11 +40,6 @@
     pointer-events: none;
   }
   &__link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     text-align: center;
     color: $blue-500;
     transition: all 0.1s ease-in;

@@ -29,7 +29,7 @@ export function ResourcesCard({ image, name, resourcePath, locationHref }: Resou
           <Image src={image} alt="resource portrait" width={110} height={110} />
         </div>
         <p className={styles.card__text}>{name}</p>
-        Descargar guía
+        Descargar
       </a>
       <Link className={styles.card__maps} href={locationHref} target="_blank">
         <Image src="/icons/google-maps.png" alt="location icon" width={24} height={24} />
