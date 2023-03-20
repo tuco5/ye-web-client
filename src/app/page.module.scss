@@ -55,9 +55,11 @@
 .hero__banner {
   position: relative;
   width: 45vw;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: center;
   margin-top: 15rem;
 
   @include respond(tab-port) {
